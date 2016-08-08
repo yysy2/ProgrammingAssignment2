@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This is the submission of the assigment for week 3, course 2
 
-## Write a short comment describing this function
+## This function creates the vector which contains the functions set, get, setinv, getinv in a list
 
 makeCacheMatrix <- function(x = matrix()) {
   #print(x)
@@ -19,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function checks the cache and computes the inverse if not found
 
 cacheSolve <- function(x, ...) {
   m <- x$getinv()
@@ -33,12 +32,7 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-k <- matrix((c(3,2,0,0,0,1,2,-2,1)), nrow =3, ncol=3)
-#print(k)
-myMatrix <- makeCacheMatrix(k)
-myMatrix[[2]]()
-cacheSolve(myMatrix)
-
-#myVector <- makeVector(1:15)
-#myVector[[2]]()
-#cachemean(myVector)
+#k <- matrix((c(3,2,0,0,0,1,2,-2,1)), nrow =3, ncol=3)
+#myMatrix <- makeCacheMatrix(k)
+#myMatrix[[2]]()
+#cacheSolve(myMatrix)
